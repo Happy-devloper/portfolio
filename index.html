@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ravi Kumar — B.Tech student and aspiring developer at SRMU." />
+    <link rel="preconnect" href="https://github.com" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ravi Kumar | Portfolio</title>
+  </head>
+  <body>
+    <div class="glow glow-one"></div><div class="glow glow-two"></div>
+    <header class="site-header">
+      <a class="brand" href="#home">RK<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav>
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a>
+        <a class="nav-cta" href="https://github.com/Happy-devloper" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> B.Tech student · SRMU</p>
+          <h1>Building ideas<br />into <em>digital</em> reality.</h1>
+          <p class="intro">Hi, I’m <strong>Ravi Kumar</strong> — a second-year B.Tech student at Shri Ramswaroop Memorial University, learning to craft useful, thoughtful web experiences.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View my work <b>↓</b></a>
+            <a class="button text-button" href="https://github.com/Happy-devloper" target="_blank" rel="noreferrer">Explore GitHub <b>↗</b></a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="portrait-frame">
+            <img src="assets/profile-pic.jpg?size=500" alt="Ravi Kumar" />
+          </div>
+          <div class="availability"><i></i> Available to learn &amp; collaborate</div>
+          <p class="portrait-label">BASED IN<br /><strong>INDIA, 2026</strong></p>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <p class="section-kicker">01 / ABOUT ME</p>
+        <div class="about-grid">
+          <h2>Curious by nature.<br />Creative by choice.</h2>
+          <div>
+            <p>I’m a second-year B.Tech student at SRMU with a growing passion for web development and problem-solving. I enjoy taking an idea from a blank page to something people can actually use.</p>
+            <p>Right now, I’m focused on strengthening my foundations, exploring modern web technologies, and building projects that sharpen both my technical and design thinking.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <div class="section-heading"><p class="section-kicker">02 / SELECTED WORK</p><a href="https://github.com/Happy-devloper" target="_blank" rel="noreferrer">See all on GitHub ↗</a></div>
+        <div class="project-list">
+          <article class="project-card featured">
+            <div class="project-number">01</div>
+            <div class="project-content"><p class="project-type">RESTAURANT WEBSITE</p><h2>Bistro<br /><em>46</em></h2><p>A stylish restaurant landing page designed to make the menu, atmosphere, and dining experience feel inviting from the very first scroll.</p><div class="tags"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div><a class="project-link" href="https://bistro-46.netlify.app/" target="_blank" rel="noreferrer">Visit live site ↗</a></div>
+            <a class="project-image bistro-image" href="https://bistro-46.netlify.app/" target="_blank" rel="noreferrer" aria-label="Visit Bistro 46 website"><img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85" alt="Warm restaurant table setting" /></a>
+          </article>
+          <article class="project-card weather-card">
+            <div class="project-number">02</div>
+            <div class="project-content"><p class="project-type">WEATHER APPLICATION</p><h2>Weather<br /><em>Vue</em></h2><p>A clean weather app for checking current conditions at a glance, with temperature, sky status, feels-like data, and humidity.</p><div class="tags"><span>JavaScript</span><span>Weather API</span><span>UI Design</span></div><a class="project-link" href="https://happy-devloper.github.io/WeatherVue/" target="_blank" rel="noreferrer">Visit live site ↗</a></div>
+            <a class="project-image weather-image" href="https://happy-devloper.github.io/WeatherVue/" target="_blank" rel="noreferrer" aria-label="Visit WeatherVue website"><img src="assets/weathervue.png" alt="WeatherVue app interface" /></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <p class="section-kicker">03 / TOOLKIT</p>
+        <div class="skills-grid"><h2>The tools I’m<br /><em>growing with.</em></h2><div class="skill-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>C Programming</span><span>Git &amp; GitHub</span><span>Responsive Design</span><span>UI Design</span></div></div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="section-kicker">04 / GET IN TOUCH</p>
+      <h2>Let’s build something<br /><em>meaningful.</em></h2>
+      <a class="email" href="mailto:HappyDevlopmment@gmail.com">HappyDevlopmment@gmail.com <span>↗</span></a>
+      <div class="footer-bottom"><span>© 2026 Ravi Kumar</span><a href="https://github.com/Happy-devloper" target="_blank" rel="noreferrer">GitHub ↗</a><span>SRMU · B.Tech</span></div>
+    </footer>
+    <script>
+      const toggle = document.querySelector('.menu-toggle'), nav = document.querySelector('nav');
+      toggle.addEventListener('click', () => { nav.classList.toggle('open'); toggle.setAttribute('aria-expanded', nav.classList.contains('open')); });
+    </script>
+  </body>
+</html>
